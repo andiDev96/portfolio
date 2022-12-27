@@ -37,7 +37,18 @@
     *::selection{
         background: var(--main-color);
         color: var(--bg-color);
+    }
 
+    .heading{
+        text-align: center;
+        
+    }
+    .heading h2{
+        font-size: 2rem;
+    }
+    .heading span{
+        font-size: var(--p-font);
+        color: rgba(2, 166, 70);
     }
 /* -------------------------------------------------------------------------- */
 /*                              end global styles                             */
@@ -167,4 +178,38 @@
     }
 /* -------------------------------------------------------------------------- */
 /*                                  home end                                  */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                             about section start                            */
+/* -------------------------------------------------------------------------- */
+        .about-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .about-img img{
+            width: 80%;
+            border-radius: 0.7rem;
+        }
+        .about-text{
+            font-size: var(--p-font);
+            font-weight: 400;
+            text-align: justify;
+        }
+        .information{
+            margin: 1rem 0 1.4rem;
+        }
+        .information .info.box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+        .information .info-box span{
+            font-weight: 400;
+            margin-left: 1rem;
+        }
+/* -------------------------------------------------------------------------- */
+/*                              about section end                             */
 /* -------------------------------------------------------------------------- */
